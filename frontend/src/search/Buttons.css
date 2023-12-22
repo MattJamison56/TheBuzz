@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.search-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 30%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;            
+}
+
+/* Buttons Container */
+.Buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    width: 100%; /* Adjusted to take the full width of parent */
+}
+
+/* Category Buttons */
+.catbut {
+    background-color: #222;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 1vh;
+    padding: 1.5vh 3vh;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border:none;
+
+    &:hover {
+        background-color: #e6ba09;
+        color: black;
+        box-shadow: 0 0 5px rgba(255, 221, 0, 0.6);
+    }
+}
+
+/* Search Bar Form */
+.search-bar-form {
+    width: 60%;
+    padding: 1vh; /* Adjust padding instead of height */
+    border-radius: 10vw;
+}
+
+/* Search Bar Input */
+.search-bar {
+    width: 100%;
+    height: 30%;
+    padding: 2%;
+    border-radius: 10vw;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+/* Fade Transitions */
+.search-container.fade,
+.search-container.fade-in {
+    transition: opacity 0.2s ease;
+}
+
+.search-container.fade {
+    opacity: 0;
+}
+
+.search-container.fade-in {
+    opacity: 1;
+}
+
+
+@media (max-width: 900px) {
+    .catbut {
+        font-size: 0.9em; 
+        padding: 1.2vh 2.4vh; 
+    }
+    .search-bar {
+        height: 40%;
+    }
+    .search-bar-form {
+        width: 70%; /* Increased width for better usability on small screens */
+    }
+  }
+
+
+@media (max-width: 600px) {
+    .catbut {
+        font-size: 0.8em; 
+        padding: 1vh 2vh; /* Slightly reduced padding for smaller screens */
+    }
+    .search-bar {
+        height: 40%;
+    }
+    .search-bar-form {
+        width: 80%; /* Increased width for better usability on small screens */
+    }
+}
+
+  @media (max-width: 480px) {
+    .catbut {
+        font-size: 0.8em; /* Even smaller font size for very small devices */
+        padding: 0.8vh 1.6vh;
+    }
+  }

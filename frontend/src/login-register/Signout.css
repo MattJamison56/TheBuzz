@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.signout {
+    background-color: #222;
+    color: white;
+    border-radius: 5vw;
+    margin: 0.5vw;
+    height: 50px;
+    width: 90px;
+    font-size: 1em; /* Changed from 100% for better scalability */
+    font-family: "Montserrat", sans-serif;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    font-weight: 700;
+}
+
+.signoutcontainer {
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    justify-content: right;
+    display: flex;
+}
+
+.signout:hover {
+  background: #e6ba09;
+  color: black;
+  box-shadow: 0 0 5px rgba(255, 221, 0, 0.6);
+}

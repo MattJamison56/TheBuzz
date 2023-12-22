@@ -1,0 +1,11 @@
+flask
+python-dotenv
+psycopg2-binary
+passlib
+flask_cors
+pandas
+newsapi
+bs4
+urllib
+time
+requests

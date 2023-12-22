@@ -1,0 +1,59 @@
+.website-title {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    animation:
+    fadeIn 3s ease forwards;
+  }
+  
+.image-button.fade,
+.image-button.fade-in {
+    transition: opacity 0.5s ease;
+}
+
+.image-button.fade {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-button.fade-in {
+    opacity: 1;
+}
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .website-title {
+      transform: scale(1.1) translateY(20%);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .website-title {
+      transform: scale(1.2) translateY(40%);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .website-title {
+      transform: scale(1.3) translateY(50%);
+    }
+  }
+  
+  .image-button {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }

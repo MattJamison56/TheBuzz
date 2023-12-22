@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.login-buttons{
+    position: absolute;
+    top: 55px;
+    right: 55px;
+}
+
+.login {
+    background-color: #222;
+    color: white;
+    border-radius: 5vw;
+    margin: 0.3vw;
+    height: 50px;
+    width: 80px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em; /* Changed from 100% for better scalability */
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    font-weight: 700;
+}
+
+.login:hover, .register:hover {
+    background: #e6ba09;
+    color: black;
+    box-shadow: 0 0 5px rgba(255, 221, 0, 0.6);
+}
+
+.register {
+    background-color: #222;
+    color: white;
+    border-radius: 5vw;
+    margin: 0.3vw;;
+    height: 50px;
+    width: 100px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-size: 1em; /* Changed from 100% for better scalability */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    border: none;
+}
+
+.login-form,
+.register-form {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 20vw;
+  height: auto;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 2vw;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.login-form.visible,
+.register-form.visible {
+  visibility: visible;
+}
+
+h1 {
+  color: black;
+  padding: 0;
+  font-size: large;
+}
+
+.exit-button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  background-color: #f3f3f3; 
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: 0; 
+  border: none;
+  border-radius: 0.5vw;
+}
+
+.exit-button:hover {
+  background-color: lightcoral;
+  scale: 1.05;
+}
+
+.submit-button {
+    color: white;
+    border:none;  
+    background: #222;
+    border-radius: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    user-select: none;
+    font-size: 1em; /* Changed from 100% for better scalability */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.submit-button:hover {
+  background: #e6ba09;
+  color: black;
+  box-shadow: 0 0 5px rgba(255, 221, 0, 0.6);
+}
+
+@media (max-width: 1200px) {
+  .login-form,
+  .register-form {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .login-form,
+  .register-form {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-form,
+  .register-form {
+    width: 60vw;
+  }
+}
+
+

@@ -1,0 +1,21 @@
+.loading {
+    transform: translate(-50%, -50%) scale(0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40vh;
+    height: 40vh;
+}
+
+.loading.fade,
+.loading.fade-in {
+    transition: opacity 0.3s ease;
+}
+
+.loading.fade {
+    opacity: 0;
+}
+
+.loading.fade-in {
+    opacity: 1;
+}

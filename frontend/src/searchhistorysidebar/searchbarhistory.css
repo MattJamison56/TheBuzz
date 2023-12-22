@@ -1,0 +1,138 @@
+.daddycontainer {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    margin: 0%;
+    left: 0%;
+    top: 0%;
+    visibility: visible;
+}
+
+.daddycontainer.closed {
+    visibility: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background-color: #222;
+    margin: 0%;
+    color: #fff;
+    left: -100%;
+    top: 0%;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.container.open {
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background-color: #222;
+    margin: 0%;
+    color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    left: 0%;
+    top: 0%;
+    visibility: visible;
+    transition: 0.3s ease;
+}
+
+.title {
+    text-align: left;
+    margin: 0;
+    padding: 10px;
+    color: #666;
+}
+
+.titletop {
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    padding: 10px;
+    color: #666;
+}
+
+.theButtons {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.searchhistoryitem {
+    flex: 1; /* Allocate remaining space to this item */
+    padding: 10px; /* Adjust padding as needed */
+    margin-left: 25px; /* Space between this button and delete button */
+    background-color: #222;
+    color: #fff;
+    border: none;
+    text-align: center; /* Center text */
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.theButtons:hover .searchhistoryitem{
+    background-color: #333;
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}
+
+.theButtons:hover {
+    background-color: #333;
+    transition: transform 0.2s ease;
+}
+
+.searchhistoryitem:hover .deletebut {
+    opacity: 1;
+}
+
+.deletebut {
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+    background: #333;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 1px;
+}
+
+.theButtons:hover .deletebut{
+    opacity: 1;
+    display: inline-block;
+}
+
+.deletebut:hover {
+    background: lightcoral;
+}
+
+@media (max-width: 1024px) {
+  .deletebut{
+    opacity: 1;
+    background: lightcoral;
+   }
+}
+.caret-btn {
+    position: absolute;
+    top: 95%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    right: 83%;
+    transition: 1s ease;
+    border-radius: 10px;
+    border:none;
+}
+
+.caret-btn.left {
+    right: 5%;
+    transition: 1s ease;
+}
+
+.caret-btn:hover {
+    background-color: #666;
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+}

@@ -1,0 +1,52 @@
+.additem {
+    width: 98%; 
+    height: max-content;
+    box-sizing: border-box; 
+    padding: 8px;
+    margin-bottom: 2px;
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    font-size: large;
+}
+
+.additem:hover {
+    transform: scale(1.01);
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+.submitbut {
+    color: white;
+    border:none;  
+    background-color: #333;
+    border-radius: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.25vw;
+    padding-bottom: 0.25vw;
+    user-select: none;
+    font-size: 1em; /* Changed from 100% for better scalability */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.submitbut:hover {
+  background: #e6ba09;
+  color: black;
+  box-shadow: 0 0 5px rgba(255, 221, 0, 0.6);
+}
+
+.favoriteform {
+    height: max-content;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+}
