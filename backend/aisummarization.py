@@ -19,7 +19,7 @@ def summarize(news_input):
     )
 
     assistant_response = response.choices[0].message.content
-    result = "GPT: " + assistant_response.strip("\n").strip()
+    result = assistant_response.strip("\n").strip()
     chat_log.append({"role": "assistant", "content": result})
 
     return result
